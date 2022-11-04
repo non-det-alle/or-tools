@@ -674,7 +674,6 @@ endif  # USE_COINOR
 ifeq ($(USE_SCIP),ON)
 ifeq ($(UNIX_SCIP_DIR),$(OR_TOOLS_TOP)/dependencies/install)
 	$(COPYREC) dependencies$Sinstall$Sinclude$Sscip "$(DESTDIR)$(prefix)$Sinclude"
-	$(COPY) dependencies$Ssources$Sscip-$(SCIP_TAG)$Sapplications$SPolySCIP$SLICENCE "$(DESTDIR)$(prefix)$Sshare$Sscip_license.txt"
 endif
 endif  # USE_SCIP
 ifeq ($(WINDOWS_ZLIB_DIR),$(OR_ROOT)dependencies/install)
